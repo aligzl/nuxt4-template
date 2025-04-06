@@ -1,0 +1,97 @@
+# Proje Kuralları
+
+Bu dosya, Nuxt.js ve Tailwind CSS 4 kullanılarak geliştirilecek olan dashboard uygulaması için proje kurallarını içerir. Bu kurallara uyulması, kodun daha temiz, sürdürülebilir ve tutarlı olmasını sağlayacaktır.
+
+## 1. Genel Kurallar
+
+1. **Nuxt.js Kullanımı:**
+   - Gereksiz CSS dosyaları oluşturulmayacak, mümkün olduğunca Tailwind CSS utility sınıfları kullanılacaktır.
+   - Özel CSS yazılması gereken durumlarda, global CSS yerine modüler CSS (CSS Modules) tercih edilecektir.
+   - Configler tek bir klasörde tutulacak. frontend için app/config server için server/configs
+   - Projo full typescript olacak ve IDe için autocompletion ve type safety sağlanacak.
+   - Frontend için typeslar app/types klasöründe server için server/types klasöründe tutulacak. Ortak kullanılan typesleri shared klasöründe tutabilirsiniz.
+
+2. **Component Yapısı:**
+   - Tüm kodlar, component yapısında parçalara ayrılacak şekilde yazılacaktır.
+   - Hiçbir component dosyası 600-700 satırı geçmeyecek şekilde tasarlanacaktır.
+   - Componentler, tekrar kullanılabilir, developer dostu, sade ve anlaşılır olacak şekilde tasarlanacak ve gereksiz kod tekrarından kaçınılacaktır. Gerekirse açıklamalı kod yazılacaktır.
+
+3. **Modern Tasarım Kuralları:**
+   - Tasarım, modern tasarım kurallarına uygun olacak şekilde yapılacaktır.
+   - Renk paleti, tipografi ve diğer tasarım öğeleri tutarlı olacak şekilde seçilecektir.
+   - Kullanıcı arayüzü, kullanıcı deneyimi (UX) odaklı olacak şekilde tasarlanacaktır.
+   - Dark mode ve light mode desteği olacaktır.
+   - Responsive tasarım olacaktır.
+
+## 2. Dosya ve Klasör Yapısı
+
+1. **Componentler:**
+   - Her component, `app/components` klasörü altında ayrı bir klasörde tutulacaktır.
+   - Her component klasörü, ilgili component için gerekli olan stil dosyalarını ve diğer bağımlılıkları içerebilir.
+
+2. **Sayfalar:**
+   - Sayfalar, `app/pages` klasörü altında Nuxt.js'in standart yapısına uygun şekilde oluşturulacaktır.
+   - Her sayfa, mümkün olduğunca küçük ve sade tutulacak, logic kısımları componentlere taşınacaktır.
+
+3. **Utility Fonksiyonlar:**
+   - Proje genelinde kullanılacak utility fonksiyonları,Client için `app/utils` klasörü server için server/utils altında toplanacaktır. Nuxt-3 gereği auto import oluyor bu dikkate alınmalı
+   - Utility fonksiyonları, tekrar kullanılabilir ve genel amaçlı olacak şekilde yazılacaktır.
+   - Server ve client için ortak utils dosyaları shared klasöründe tutulacak.
+
+## 3. Kod Stili ve Formatlama
+
+1. **Kod Formatlama:**
+   - Kod ve ESLint yani nuxt@eslint kullanılarak formatlanacak ve linting işlemleri yapılacaktır.
+   - Kod formatlama kuralları, proje genelinde tutarlı olacak şekilde ayarlanacaktır.
+
+2. **İsimlendirme:**
+   - Component, fonksiyon ve değişken isimleri, anlaşılır ve tutarlı olacak şekilde seçilecektir.
+   - Component, değişken ve fonksiyon isimleri PascalCase olacak şekilde yazılacaktır.
+
+3. **Yorum Satırları:**
+   - Kodların daha iyi anlaşılabilmesi için yorum satırları kullanılacaktır.
+   - Gerekli durumlarda, karmaşık logic'ler veya önemli noktalar için açıklayıcı yorumlar yazılacaktır.
+
+## 4. State Yönetimi
+
+1. **State Yönetimi:**
+   - Proje genelinde state yönetimi için useState kullanılacaktır.
+   - State yönetimi, componentler arasında tutarlı ve merkezi bir şekilde yapılacaktır.
+
+2. **API İstekleri:**
+   - API istekleri, `server/api` klasörü altında toplanacak ve buradan yönetilecektir.
+   - API istekleri, async/await yapısı kullanılarak yapılacak ve hata yönetimi düzgün bir şekilde sağlanacaktır.
+
+## 5. Test
+
+
+## 6. Versiyon Kontrolü
+
+## 7. Performans Optimizasyonu
+
+1. **Lazy Loading:**
+   - Büyük componentler ve sayfalar, lazy loading ile yüklenerek performans optimizasyonu sağlanacaktır.
+   - Görüntü ve diğer statik dosyalar, optimize edilmiş boyutlarda kullanılacaktır.
+
+2. **Code Splitting:**
+   - Kod, Nuxt.js'in sunduğu code splitting özellikleri kullanılarak optimize edilecektir.
+   - Gereksiz yere büyük bundle'lar oluşturulmayacaktır.
+
+## 8. Dokümantasyon
+
+1. **Proje Dokümantasyonu:**
+   - Proje, README.md dosyası ile dokümante edilecektir.
+   - README.md dosyası, projenin nasıl çalıştırılacağı, kurulum adımları ve diğer önemli bilgileri içerecektir.
+
+2. **Component Dokümantasyonu:**
+   - Her component, kullanımı ve özellikleri hakkında kısa bir dokümantasyon içerecektir.
+   - Component dokümantasyonu, component dosyasının başında yorum satırları olarak yazılabilir.
+
+3. **API Dokümantasyonu:**
+   - API'lar .md dosyası ile dokümante edilecektir.
+4.  ** changelog **
+   - Proje için bir changelog dosyası oluşturulacak ve sürekli güncellenecektir ve .md formatında olacak.
+
+---
+
+Bu kurallar, projenin daha tutarlı, temiz ve sürdürülebilir olmasını sağlayacaktır. Kurallara uyulması, hem geliştirme sürecini hem de projenin bakımını kolaylaştıracaktır.
