@@ -1,6 +1,6 @@
 # Nuxt 4 Template
 
-A modern Nuxt.js template with Nuxt 4 compatibility features, Tailwind CSS 4, and custom fetch implementation.
+A modern Nuxt.js template with Nuxt 4 compatibility features, Tailwind CSS 4 integration, nuxt eslint module, and custom fetch implementation. Includes dark/light mode support, responsive design, and full TypeScript integration for optimal developer experience
 
 ## Features
 
@@ -11,11 +11,73 @@ A modern Nuxt.js template with Nuxt 4 compatibility features, Tailwind CSS 4, an
 - 📱 Responsive design
 - 🔒 TypeScript support
 
+## Built With
+
+[![Nuxt][nuxt-shield]][nuxt-url]
+[![Vue][vue-shield]][vue-url]
+[![Tailwind CSS][tailwind-shield]][tailwind-url]
+[![TypeScript][typescript-shield]][typescript-url]
+[![ESLint][eslint-shield]][eslint-url]
+[![PNPM][pnpm-shield]][pnpm-url]
+
+[nuxt-shield]: https://img.shields.io/badge/Nuxt-3.16+-00DC82?style=for-the-badge&logo=nuxt.js&logoColor=white
+[nuxt-url]: https://nuxt.com/
+[vue-shield]: https://img.shields.io/badge/Vue-3.5+-4FC08D?style=for-the-badge&logo=vue.js&logoColor=white
+[vue-url]: https://vuejs.org/
+[tailwind-shield]: https://img.shields.io/badge/Tailwind-4.1+-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white
+[tailwind-url]: https://tailwindcss.com/
+[typescript-shield]: https://img.shields.io/badge/TypeScript-Latest-3178C6?style=for-the-badge&logo=typescript&logoColor=white
+[typescript-url]: https://www.typescriptlang.org/
+[eslint-shield]: https://img.shields.io/badge/ESLint-9.0+-4B32C3?style=for-the-badge&logo=eslint&logoColor=white
+[eslint-url]: https://eslint.org/
+[pnpm-shield]: https://img.shields.io/badge/PNPM-10.7+-F69220?style=for-the-badge&logo=pnpm&logoColor=white
+[pnpm-url]: https://pnpm.io/
+
 ## Tech Stack
 
+<p align="center">
+  <a href="https://nuxt.com/" target="_blank" rel="noreferrer">
+    <img src="https://nuxt.com/assets/design-kit/logo/icon-green.svg" width="36" height="36" alt="Nuxt" />
+  </a>
+  <a href="https://vuejs.org/" target="_blank" rel="noreferrer">
+    <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/vuejs-colored.svg" width="36" height="36" alt="Vue" />
+  </a>
+  <a href="https://tailwindcss.com/" target="_blank" rel="noreferrer">
+    <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/tailwindcss-colored.svg" width="36" height="36" alt="Tailwind CSS" />
+  </a>
+  <a href="https://www.typescriptlang.org/" target="_blank" rel="noreferrer">
+    <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/typescript-colored.svg" width="36" height="36" alt="TypeScript" />
+  </a>
+  <a href="https://eslint.org/" target="_blank" rel="noreferrer">
+    <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/eslint-colored.svg" width="36" height="36" alt="ESLint" />
+  </a>
+  <a href="https://nuxt.com/modules/color-mode" target="_blank" rel="noreferrer">
+    <img src="https://user-images.githubusercontent.com/904724/117592849-4cda1500-b13c-11eb-85ba-600c09fbb1e2.png" width="36" height="36" alt="Color Mode" />
+  </a>
+  <a href="https://nuxt.com/modules/image" target="_blank" rel="noreferrer">
+    <img src="https://nuxt.com/assets/design-kit/logo/icon-green.svg" width="36" height="36" alt="Nuxt Image" />
+  </a>
+  <a href="https://nuxt.com/modules/icon" target="_blank" rel="noreferrer">
+    <img src="https://nuxt.com/assets/design-kit/logo/icon-green.svg" width="36" height="36" alt="Nuxt Icon" />
+  </a>
+</p>
+
+### Core Technologies
+
 - [Nuxt 3](https://nuxt.com/) (with Nuxt 4 compatibility)
+- [Vue 3](https://vuejs.org/) (v3.5+)
 - [Tailwind CSS 4](https://tailwindcss.com/)
 - [TypeScript](https://www.typescriptlang.org/)
+- [Vue Router 4](https://router.vuejs.org/)
+
+### Nuxt Modules & Plugins
+
+- [@nuxtjs/color-mode](https://nuxt.com/modules/color-mode) - Dark/Light mode support
+- [@nuxt/image](https://nuxt.com/modules/image) - Image optimization
+- [@nuxt/icon](https://nuxt.com/modules/icon) - Icon support
+- [@nuxt/fonts](https://nuxt.com/modules/fonts) - Font optimization
+- [@nuxt/eslint](https://nuxt.com/modules/eslint) - ESLint integration
+- [@nuxt/scripts](https://nuxt.com/modules/scripts) - Custom script handling
 
 ## Project Structure
 
