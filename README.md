@@ -24,7 +24,7 @@ A modern Nuxt.js template with Nuxt 4 compatibility features, Tailwind CSS 4 int
 [nuxt-url]: https://nuxt.com/
 [vue-shield]: https://img.shields.io/badge/Vue-3.5+-4FC08D?style=for-the-badge&logo=vue.js&logoColor=white
 [vue-url]: https://vuejs.org/
-[tailwind-shield]: https://img.shields.io/badge/Tailwind-4.1+-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white
+[tailwind-shield]: https://img.shields.io/badge/Tailwind-4.1+-38B2AC?style=for-the-badge&logo=tailwindcss&logoColor=white
 [tailwind-url]: https://tailwindcss.com/
 [typescript-shield]: https://img.shields.io/badge/TypeScript-Latest-3178C6?style=for-the-badge&logo=typescript&logoColor=white
 [typescript-url]: https://www.typescriptlang.org/
@@ -37,28 +37,28 @@ A modern Nuxt.js template with Nuxt 4 compatibility features, Tailwind CSS 4 int
 
 <p align="center">
   <a href="https://nuxt.com/" target="_blank" rel="noreferrer">
-    <img src="https://nuxt.com/assets/design-kit/logo/icon-green.svg" width="36" height="36" alt="Nuxt" />
+    <img src="https://nuxt.com/assets/design-kit/icon-green.svg" width="36" height="36" alt="Nuxt" />
   </a>
   <a href="https://vuejs.org/" target="_blank" rel="noreferrer">
-    <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/vuejs-colored.svg" width="36" height="36" alt="Vue" />
+    <img src="https://upload.wikimedia.org/wikipedia/commons/9/95/Vue.js_Logo_2.svg" width="36" height="36" alt="Vue" />
   </a>
   <a href="https://tailwindcss.com/" target="_blank" rel="noreferrer">
-    <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/tailwindcss-colored.svg" width="36" height="36" alt="Tailwind CSS" />
+    <img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg" width="36" height="36" alt="Tailwind CSS" />
   </a>
   <a href="https://www.typescriptlang.org/" target="_blank" rel="noreferrer">
-    <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/typescript-colored.svg" width="36" height="36" alt="TypeScript" />
+    <img src="https://upload.wikimedia.org/wikipedia/commons/4/4c/Typescript_logo_2020.svg" width="36" height="36" alt="TypeScript" />
   </a>
   <a href="https://eslint.org/" target="_blank" rel="noreferrer">
-    <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/eslint-colored.svg" width="36" height="36" alt="ESLint" />
+    <img src="https://upload.wikimedia.org/wikipedia/commons/e/e3/ESLint_logo.svg" width="36" height="36" alt="ESLint" />
   </a>
   <a href="https://nuxt.com/modules/color-mode" target="_blank" rel="noreferrer">
-    <img src="https://user-images.githubusercontent.com/904724/117592849-4cda1500-b13c-11eb-85ba-600c09fbb1e2.png" width="36" height="36" alt="Color Mode" />
+    <img src="https://raw.githubusercontent.com/nuxt-modules/color-mode/main/docs/static/preview.svg" width="36" height="36" alt="Color Mode" />
   </a>
-  <a href="https://nuxt.com/modules/image" target="_blank" rel="noreferrer">
-    <img src="https://nuxt.com/assets/design-kit/logo/icon-green.svg" width="36" height="36" alt="Nuxt Image" />
+  <a href="https://image.nuxt.com/" target="_blank" rel="noreferrer">
+    <img src="https://image.nuxt.com/logo.svg" width="36" height="36" alt="Nuxt Image" />
   </a>
-  <a href="https://nuxt.com/modules/icon" target="_blank" rel="noreferrer">
-    <img src="https://nuxt.com/assets/design-kit/logo/icon-green.svg" width="36" height="36" alt="Nuxt Icon" />
+  <a href="https://pnpm.io/" target="_blank" rel="noreferrer">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/d/d3/Pnpm.svg" width="36" height="36" alt="PNPM" />
   </a>
 </p>
 
