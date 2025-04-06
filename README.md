@@ -52,13 +52,13 @@ A modern Nuxt.js template with Nuxt 4 compatibility features, Tailwind CSS 4 int
     <img src="https://upload.wikimedia.org/wikipedia/commons/e/e3/ESLint_logo.svg" width="36" height="36" alt="ESLint" />
   </a>
   <a href="https://nuxt.com/modules/color-mode" target="_blank" rel="noreferrer">
-    <img src="https://raw.githubusercontent.com/nuxt-modules/color-mode/main/docs/static/preview.svg" width="36" height="36" alt="Color Mode" />
+    <img src="https://api.nuxtjs.org/api/ipx/s_80,f_webp/gh/nuxt/modules/main/icons/color-mode.png" width="36" height="36" alt="Color Mode" />
   </a>
   <a href="https://image.nuxt.com/" target="_blank" rel="noreferrer">
-    <img src="https://image.nuxt.com/logo.svg" width="36" height="36" alt="Nuxt Image" />
+    <img src="https://api.nuxtjs.org/api/ipx/s_80,f_webp/gh/nuxt/modules/main/icons/nuxt.svg" width="36" height="36" alt="Nuxt Image" />
   </a>
   <a href="https://pnpm.io/" target="_blank" rel="noreferrer">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/d/d3/Pnpm.svg" width="36" height="36" alt="PNPM" />
+    <img src="https://pnpm.io/img/pnpm-no-name-with-frame.svg" width="36" height="36" alt="PNPM" />
   </a>
 </p>
 
