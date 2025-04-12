@@ -12,7 +12,7 @@ useHead({
   htmlAttrs: {
     lang: 'en'
   },
-  titleTemplate: (titleChunk: string) => (titleChunk ? `${titleChunk}` : 'Nuxt 4 Template')
+  titleTemplate: (titleChunk?: string) => (titleChunk ? `${titleChunk}` : 'Nuxt 4 Template')
 })
 
 const title = 'Nuxt 4 Template'

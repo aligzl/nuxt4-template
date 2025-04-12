@@ -81,6 +81,7 @@ A modern Nuxt.js template with Nuxt 4 compatibility features, Tailwind CSS 4 int
 - [@nuxt/fonts](https://nuxt.com/modules/fonts) - Font optimization
 - [@nuxt/eslint](https://nuxt.com/modules/eslint) - ESLint integration
 - [@nuxt/scripts](https://nuxt.com/modules/scripts) - Custom script handling
+- [@vueuse/nuxt](https://vueuse.org/nuxt) - VueUse integration
 
 ## Project Structure
 
