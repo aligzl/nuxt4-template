@@ -19,6 +19,7 @@ A modern Nuxt.js template with Nuxt 4 compatibility features, Tailwind CSS 4 int
 [![TypeScript][typescript-shield]][typescript-url]
 [![ESLint][eslint-shield]][eslint-url]
 [![PNPM][pnpm-shield]][pnpm-url]
+[![VueUse][vueuse-shield]][vueuse-url]
 
 [nuxt-shield]: https://img.shields.io/badge/Nuxt-3.16+-00DC82?style=for-the-badge&logo=nuxt.js&logoColor=white
 [nuxt-url]: https://nuxt.com/
@@ -32,6 +33,8 @@ A modern Nuxt.js template with Nuxt 4 compatibility features, Tailwind CSS 4 int
 [eslint-url]: https://eslint.org/
 [pnpm-shield]: https://img.shields.io/badge/PNPM-10.7+-F69220?style=for-the-badge&logo=pnpm&logoColor=white
 [pnpm-url]: https://pnpm.io/
+[vueuse-shield]: https://img.shields.io/badge/VueUse-13.1.0-42B883?style=for-the-badge&logo=vueuse&logoColor=white
+[vueuse-url]: https://vueuse.org/
 
 ## Tech Stack
 
