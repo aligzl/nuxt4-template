@@ -1,6 +1,8 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
-
 import tailwindcss from '@tailwindcss/vite'
+
+import { isDev } from './app/configs'
+import { head } from './app/configs/head'
 
 export default defineNuxtConfig({
   appId: '_app_',
@@ -12,7 +14,8 @@ export default defineNuxtConfig({
     '@nuxt/image',
     '@nuxt/scripts',
     '@nuxtjs/color-mode',
-    '@vueuse/nuxt'
+    '@vueuse/nuxt',
+    !isDev && 'nuxt-security'
   ],
 
   $development: {
@@ -20,17 +23,15 @@ export default defineNuxtConfig({
       public: {}
     }
   },
+
   devtools: { enabled: true },
+
   app: {
     rootId: 'app',
     buildAssetsDir: '_app',
-    head: {
-      title: 'Nuxt 4 Template',
-      meta: [
-        { name: 'viewport', content: 'width=device-width, initial-scale=1' }
-      ]
-    }
+    head
   },
+
   css: ['~/assets/css/main.css'],
 
   colorMode: {
@@ -44,10 +45,12 @@ export default defineNuxtConfig({
       siteName: 'Nuxt 4 Template'
     }
   },
+
   future: {
     compatibilityVersion: 4
   },
   compatibilityDate: '2025-04-06',
+
   nitro: {
 
     devProxy: {
@@ -64,6 +67,11 @@ export default defineNuxtConfig({
       tailwindcss()
     ]
   },
+
+  typescript: {
+    strict: false
+  },
+
   telemetry: false,
 
   eslint: {
@@ -71,6 +79,33 @@ export default defineNuxtConfig({
       stylistic: {
         quotes: 'single',
         commaDangle: 'never'
+      }
+    }
+  },
+
+  icon: {
+    clientBundle: {
+      scan: true
+    }
+  },
+
+  security: {
+    headers: {
+      crossOriginResourcePolicy: false,
+      crossOriginEmbedderPolicy: isDev ? 'unsafe-none' : 'require-corp',
+      contentSecurityPolicy: {
+
+        'img-src': [
+          '\'self\'',
+          'data:',
+          'blob:',
+          'https://*.cloudinary.com',
+          'https://*.githubusercontent.com',
+          'https://*.googleusercontent.com',
+          'https://*.jsdelivr.net',
+          'https://*.balloonops.com',
+          'https://*.cdnfonts.com'
+        ]
       }
     }
   }
