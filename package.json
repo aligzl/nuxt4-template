@@ -2,6 +2,14 @@
   "name": "nuxt-4-template",
   "private": true,
   "type": "module",
+  "version": "0.0.1",
+  "description": "Nuxt 3 (nuxt 4 compatible) Template with TailwindCSS, Unhead, Nuxt Security, Nuxt Color Mode, Nuxt Icon, Nuxt Fonts, Nuxt Image, Nuxt Scripts, Nuxt ESLint, Nuxt Typecheck, Nuxt Postinstall, Nuxt Build, Nuxt Dev, Nuxt Generate, Nuxt Preview, Nuxt Start, Nuxt DB Generate, Nuxt DB Migrate, Nuxt DB Studio",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aligzl/nuxt4-template"
+  },
+  "license": "MIT",
+  "author": "Ali Güzel <mudreamworld@gmail.com>",
   "scripts": {
     "build": "nuxt build",
     "dev": "nuxt dev",
