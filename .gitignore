@@ -28,6 +28,7 @@ logs
 
 #database migrations
 /server/database/migrations/*
+!/server/database/migrations/.gitkeep
 
 *.lock
 pnpm-lock.yaml
