@@ -6,14 +6,13 @@ interface FetchOptions<T> extends UseFetchOptions<T> {
   getCache?: boolean
 }
 const ttl = 1000 * 60 // 60 seconds
-const expirationDates: Record<string, number> = {}
 
 export default async function useApi<T>(
   url: Ref<NitroFetchRequest> | NitroFetchRequest | (() => NitroFetchRequest),
   options?: FetchOptions<T>
 ) {
   const nuxtApp = useNuxtApp()
-
+  const expirationDates = useState<Record<string, number>>('api-cache-expiration', () => ({}))
   const defaults: FetchOptions<T> = {
     watch: false,
     deep: false,
@@ -33,14 +32,19 @@ export default async function useApi<T>(
       // If data is not fetched yet
       if (!data) {
         // Fetch the first time
-        expirationDates[key] = Date.now() + ttl
+        expirationDates.value[key] = Date.now() + ttl
         return
       }
 
       // Is the data too old?
-      if (expirationDates[key] !== undefined && expirationDates[key] < Date.now()) {
+      if (expirationDates.value[key] !== undefined && expirationDates.value[key] < Date.now()) {
         // Refetch the data
-        expirationDates[key] = Date.now() + ttl
+        const now = Date.now()
+        expirationDates.value[key] = now + ttl
+        // const now = Date.now()
+        expirationDates.value = Object.fromEntries(
+          Object.entries(expirationDates.value).filter(([_, expiration]) => expiration >= now)
+        )
         return
       }
 
